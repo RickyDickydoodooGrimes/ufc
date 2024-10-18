@@ -1,0 +1,191 @@
+@font-face {
+  font-family: eng;
+  src: url(./theme/QuiveraRegular.otf);
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: is;
+  src: url(./theme/IranianSans.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: #d5dbdb;
+}
+body{
+    height: max-content;
+    width: 100%;
+    margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: 70px;
+  background-color: #5d6d7e;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+.navigation{
+  display: flex;
+    align-items: center;
+}
+.ufc{
+  margin-top: 10px;
+  height:50px;
+  width: 120px;
+  margin-left: 10px;
+  display: inline;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  font-family: eng;
+}
+li a{
+  position: relative;
+  padding: 0 26px;
+  color: #b2babb;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+li a::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+bottom: -2px;
+left: 0;
+background-color: white;
+visibility: hidden;
+transform: scaleX(0);
+transition: all 0.3s ease-in-out;
+}
+li a:hover::after{
+visibility: visible;
+transform: scaleX(1);
+}
+li a:hover{
+  color: white;
+}
+.container{
+  font-family: is,eng;
+    width: 50%;
+    padding: 5%;
+    border-radius: 18px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    background-color: #34495e;
+    display: inline-block;
+}
+.head{
+  position: relative;
+  color: #d5dbdb;
+}
+.body{
+  position: relative;
+  color: #5499c7;
+}
+footer{
+  font-family: eng;
+  width: 100%;
+  height: 110px;
+  background-color: #b3b6b7;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+.dana{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.jon{
+  bottom: 5px;
+}
+
+.jones{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jj{
+  position: relative;
+  cursor: pointer;
+}
+.jj:hover .jones{
+  display: block;
+}
+
+
+.miocic{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stipem{
+  position: relative;
+  cursor: pointer;
+}
+.stipem:hover .miocic{
+  display: block;
+}
+
+
+.ngannou{
+  width: 29%;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fn{
+  position: relative;
+  cursor: pointer;
+}
+.fn:hover .ngannou{
+  display: block;
+}
+.side-bar1{
+  font-family: eng;
+  color: #d5dbdb;
+  border-radius: 0 18px 18px 0;
+  height: auto;
+  margin-left: 0;
+  width: 18%;
+  background-color: #34495e;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.side-bar2{
+  font-family: eng;
+  color: #d5dbdb;
+  border-radius: 18px 0 0 18px;
+  height: auto;
+  margin-right: 0;
+  width: 18%;
+  background-color: #34495e;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+.almighty-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 7%;
+}
